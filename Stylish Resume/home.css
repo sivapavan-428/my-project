@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: rgb(225, 230, 220);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 15px 60px;
+    border: 2px solid rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    background-color: #345063;
+    margin: 0px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 1000;
+    padding-right: 0px;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: bold;
+}
+
+a.button {
+    padding: 10px 20px;
+    background-color: rgb(61, 59, 59);
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+main {
+    padding: 0 10%;
+    margin: 5% 10%;
+    display: block;
+    row-gap: 50px;
+    height: 90%;
+    bottom: 0;
+    min-height: 100vh;
+
+
+}
+
+main section {
+    margin: 30px 0px;
+}
+
+main h1 {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+main h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: rgb(39, 97, 87);
+    font-weight: bold;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #6e7e64;
+    font-weight: bolder;
+
+}
+
+footer {
+    background: #345063;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #bbbbbb;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+footer ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+menu li :hover {
+    color: #fafafa;
+}
+
+a.button :hover {
+    transform: translateY(5px);
+    color: gold;
+}
+
+#aboutmesection,
+#education-section {
+    margin: 15% 0px;
+}
+
+.about-text p {
+    margin: 20px 20px;
+}
+
+.hobby-list li {
+    margin: 10px 20px;
+}
+
+.education div {
+    margin: 20px 20px;
+}
+
+main section {
+    min-height: 100vh;
+}
