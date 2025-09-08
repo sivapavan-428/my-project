@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="home.css">
-    <!-- color: rgb(39, 97, 87) -->
+    <!-- <link rel="stylesheet" href="home2.css"> -->
+    <!-- <link rel="stylesheet" href="home3.css"> -->
+
 
 </head>
 
@@ -16,29 +21,26 @@
             <li><a href="#home-section">Home</a></li>
             <li><a href="#aboutmesection">About Me</a></li>
             <li><a href="#education-section">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-page">Contact Me</a></li>
         </menu>
-        <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="button">Hire Me</a> -->
     </header>
+
     <main>
         <section id="home-section">
-            <pre>
-                <h1>Hi</h1>
-                <h1>My Name Is <span><Strong>PAVAN</Strong></span></h1>
-            </pre>
-            <pre>
-                <h2>  I'm a Full-Stack 
-                <span>Developer</span> </h2>
-            </pre>
-            <p>
-                Engineer by degree, developer by passion — blending EEE fundamentals
-                with modern Java Fullstack skills.
-            </p>
+            <div>
+                <h1>Hi, I'm <span>Sivapavan</span> </h1>
+                <p class="typing-text">Aspiring Fullstack Developer | Java | Web Technologies</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="index.html" class="btn">View My CV</a>
+                <a href="#contact-page" class="btn secondary">Contact Me</a>
+            </div>
         </section>
 
         <section id="aboutmesection">
-            <section class="about-me">
+            <div class="about-me">
                 <div class="about-container">
                     <picture>
                         <img src="" alt="Profile Photo">
@@ -62,18 +64,17 @@
                             <strong>software development expertise</strong> helps me approach
                             problems with both analytical and creative thinking.
                         </p>
-                        <a href="index.html" target="_blank" class="btn">Download Resume</a>
                     </div>
                 </div>
-            </section>
+            </div>
 
 
-            <section class="hobbies">
+            <div class="hobbies">
                 <h2>Hobbies & Interests</h2>
                 <ul class="hobby-list">
                     <li>🎵 Listening to Music</li>
                     <li>💻 Coding & Exploring New Technologies</li>
-                    <li>🕹️ Playing Vedio Games</li>
+                    <li>🕹️ Playing Video Games</li>
                     <li>📚 Reading Tech Blogs & Books</li>
                 </ul>
                 <h2>Languages</h2>
@@ -81,11 +82,11 @@
                     <li>🇮🇳 Telugu — Native</li>
                     <li>🇬🇧 English — Proficient</li>
                 </ul>
-            </section>
+            </div>
         </section>
 
         <section id="education-section">
-            <section class="education">
+            <div class="education">
                 <h2>Education</h2>
                 <div class="educard">
                     <h4>Bachelor Of Technology(B.Tech) in Electrical and Electronics Engineering</h4>
@@ -105,10 +106,135 @@
                     <p><strong>Sri Chaitanya School</strong></p>
                     <p>Achieved 90% overall with Distinction.</p>
                 </div>
-            </section>
+            </div>
         </section>
 
+        <section id="skills-section">
+            <h1>My Skills</h1>
+            <div class="technical-skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><strong>Backend Deleopment : </strong>Java, SpringBoot</li>
+                    <li><strong>Frontend Development : </strong>HTMl, CSS, Java Script, React Js</li>
+                    <li><strong>Database : </strong>MySQL</li>
+                    <li><strong>Tools & Platforms : </strong> Spring Tool Suite(STS), VS Code, Postman, Swagger, Eclispe
+                    </li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Problem-Solving & Analytical Thinking</li>
+                    <li>Quick Learner & Adaptive</li>
+                    <li>Strong Communication & Teamwork</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <details>
+                        <summary>
+                            <h3>High Gain DC-DC Converter Development</h3>
+                            <p> Designed and implemented a high gain DC-DC Converter using a<strong>Switched LC
+                                    Network</strong> to maximize voltage efficiency and reduce complexity.</p>
+                        </summary>
+
+                        <ul class="project-details">
+                            <li> Developed a <strong>multi-stage active switched inductor-capacitor network</strong>
+                            </li>
+                            <li> Managed project lifecycle: <em>Design → Simulation → Prototype → Testing
+                                    →Optimization</em></li>
+                            <li> Achieved improved efficiency and simplified design through simulation and validation
+                            </li>
+                        </ul>
+                        <p><strong>Domain : </strong>Electrical & Electronics Engineering</p>
+                    </details>
+                </div>
+
+                <div class="project-card">
+                    <details>
+                        <summary>
+                            <h3>Interactive Developer Portfolio</h3>
+                            <p>A responsive single-page portfolio built using <strong> HTML5 and CSS3,</strong>
+                                showcasing my skills,projects.</p>
+                        </summary>
+                        <ul class="project-details">
+                            <li>Created a fully responsive layout compatible with desktops, tablets, and mobile devices.
+                            </li>
+                            <li>Used semantic HTML elements to improve accessibility and search engine optimization.
+                            </li>
+                            <li>Implemented clean and organized layouts using Flexbox and CSS Grid techniques.</li>
+                            <li>Enhanced user experience with smooth scrolling, hover animations, and interactive
+                                elements.</li>
+                        </ul>
+                        <p><strong>Domain:</strong> Web Development</p>
+                    </details>
+                </div>
+
+                <div class="project-card">
+                    <details>
+                        <summary>
+                            <h3>Persanol Portfolio Website</h3>
+                            <p>A responsive personal portfolio website built with <strong>HTML5 and CSS3</strong> to
+                                showcase projects and skills, featuring semantic structure, modern layouts, and basic
+                                animations.</p>
+                        </summary>
+                        <ul class="project-details">
+                            <li>Developed a responsive personal portfolio website using HTML5 and CSS3.</li>
+                            <li>Implemented semantic elements for accessibility and SEO.</li>
+                            <li>Designed modern layouts with Flexbox/Grid.</li>
+                            <li>Added CSS animations and transitions for interactive UI.</li>
+                            <li>Created a clean, mobile-friendly design to showcase projects and skills.</li>
+                        </ul>
+                        <p><strong>Domine : </strong>Web Development</p>
+
+                    </details>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-page">
+            <h3>Let’s build something amazing together. Reach out to me through any of the channels below</h3>
+            <div class="divs">
+                <div class="contact-information">
+                    <p><i class='bx bxs-envelope'></i>&nbsp; Email Address &nbsp;&nbsp;:&nbsp; <strong><a
+                                href="mailto:sivapavanpenumaru@gmail.com"
+                                target="_blank">sivapavanpenumaru@gmail.com</a></strong></p>
+                    <p><i class='bx bxs-phone-call'></i>&nbsp; Phone Number &nbsp;:&nbsp; <Strong><a
+                                href="tel:+919014372885">+91 9014372885</a></Strong></p>
+                    <p><i class='bx bx-current-location'></i>&nbsp; Location
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;<strong>Hyderbad,
+                            India</strong></p>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <label for="Name">Name : </label>
+                        <input type="text" name="" id="" placeholder="Your Name">
+                        <br>
+                        <!-- <label for="PhoneNumber">Phone : </label>
+                        <input type="tel" name="" id=""placeholder="Phone"> -->
+                        <label for="Email">Email : </label>
+                        <input type="email" name="" id="" placeholder="Your Email"><br>
+                        <label for="">Message : </label>
+                        <textarea name="" id="" cols="60" rows="4" placeholder="Your Thoughts"></textarea><br>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <div class="whats-app">
+                    <a href="https://wa.me/919014372885" target="_blank">Message me on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <a href="#home-section"><button id="scroll-up"> &uarr;</button></a> 
     </main>
+    
     <footer>
         <ul>
             <li><a href="http://linkedin.com" target="_blank"><img src="" alt="">LinkedIn</a></li>
@@ -121,5 +247,4 @@
         </p>
     </footer>
 </body>
-
 </html>

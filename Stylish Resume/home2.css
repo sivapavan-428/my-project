@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #eef2f7;
+  color: #1c1c1e;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 0;
+  z-index: 1000;
+  border-bottom: 2px solid #ddd;
+  backdrop-filter: blur(10px);
+}
+
+header menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #1c1c1e;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #ff4d5a;
+}
+
+main {
+  padding-top: 100px;
+}
+
+#home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 10%;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 0 0 100px 0;
+}
+
+#home-section h1 {
+  font-size: 3rem;
+  color: #fff;
+  max-width: 500px;
+}
+
+#home-section h1 span {
+  color: #fff;
+  text-shadow: 2px 6px rgba(0,0,0,0.2);
+}
+
+.typing-text {
+  color: #fff;
+  font-size: 1.2rem;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+  animation: typing 4s steps(40, end) forwards;
+  margin: 20px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #fff;
+  color: #ff4d5a;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff4d5a;
+  color: #fff;
+}
+
+#aboutmesection {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  gap: 50px;
+  padding: 80px 10%;
+  align-items: center;
+}
+
+.about-container img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  color: #ff4d5a;
+  margin-bottom: 15px;
+}
+
+.hobbies ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  list-style: none;
+}
+
+.hobbies li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.education {
+  padding: 80px 10%;
+  background: #fff;
+  border-radius: 50px 0 50px 0;
+}
+
+.educard {
+  margin-bottom: 30px;
+  padding: 25px;
+  border-left: 5px solid #ff4d5a;
+  background: #f9f9f9;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.educard:hover {
+  transform: translateX(5px);
+}
+
+#skills-section {
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.technical-skills, .soft-skills {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+#projects {
+  padding: 80px 10%;
+}
+
+.project-card {
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+#contact-page {
+  padding: 80px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact-page h3 {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.divs{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+
+}
+
+.contact-information{
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 100px;
+}
+a{
+  text-decoration: none;
+  color: #ff4d5a;
+}
+input ,textarea{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: #ff4d5a;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: #fff;
+  color: #ff4d5a;
+  border: 2px solid #ff4d5a;
+}
+
+footer {
+  padding: 50px 10%;
+  background: #1c1c1e;
+  color: #fff;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ff4d5a;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}

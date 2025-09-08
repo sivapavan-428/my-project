@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #345063;
+  padding: 15px 50px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+menu li a {
+  text-decoration: none;
+  color: #f9fafa;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.25s ease;
+  position: relative;
+  display: inline-block;
+}
+
+menu li a:hover {
+  color: #5ce1e6;
+  transform: translateY(-3px) scale(1.05);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  margin: 5px 15%;
+
+}
+
+.project-details {
+  margin: 10px 0 15px 40px;
+  font-size: 15px;
+  color: #444;
+  list-style: "🔹 ";
+  margin-left: 50px;
+}
+
+.project-details li {
+  margin-bottom: 6px;
+}
+
+.project-card {
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  margin: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: color 0.3s ease, transform 0.25s ease;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.01);
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+h2 {
+  border-left: 5px solid #345063;
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary h3 {
+  margin-bottom: 5px;
+  color: #345063;
+}
+
+.project-details {
+  margin-top: 15px;
+}
+
+details[open] summary {
+  color: #5ce1e6;
+}
