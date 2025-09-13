@@ -391,3 +391,220 @@ let varContainingFunction = function() {
 };
 varContainingFunction();
 console.log(typeof varContainingFunction())
+
+let operator = "+";
+function operation(one, two){
+  if (operator === "+"){
+    return  one + two;
+  }
+  else if (operator === "-"){
+    return one-two;
+  }
+  else{
+    return "No Operand is Present"
+  }
+}
+let ar = operation(3,6)
+console.log(ar)
+console.log(typeof operator)
+
+const obj = {
+  value: 10,
+  regular: function() { console.log(this.value); }, // works
+  arrow: (() => { return () => console.log(this.value);}) () // undefined in most cases
+};
+obj.regular(); // 10
+obj.arrow();   // undefined
+
+const square = (x) => { return x*x};
+console.log(square(4)); // 16
+
+const details = (name , age) => ({  name, age});
+console.log(details("Jai",24))
+
+let addTwoNumbers = (x, y) => {
+ console.log("Adding...");
+ return x + y;
+}
+const ag = addTwoNumbers(4,8)
+console.log(ag)
+
+let a = 10;
+function number(){
+    return a;    
+}
+console.log(number())
+
+function getRecursive(nr) {
+ console.log(nr);
+ if(nr > 1 ){
+     getRecursive(--nr);
+ }
+ else{
+    console.log("Done with Recursion")
+ }
+}
+getRecursive(3);
+
+function printNum(n) {
+  if (n > 5) return;   // stop condition
+  console.log(n);
+  printNum(n + 1);     // recursive call
+}
+printNum(1);
+
+function person(name="Jai" , age=24){
+    this.name = name;
+    this.age = age;
+}
+console.log("Hi My name is " + person.name + " And my age is " + person.age )
+
+class Dog {
+    dogName;
+    weight;
+    color;
+    breed;
+    constructor(dogName, weight, color, breed) {
+        this.dogName = dogName;
+        this.weight = weight;
+        this.color = color;
+        this.breed = breed;
+    }
+}
+let dog = new Dog("JavaScript", 2.4, "brown", "chihuahua");
+const dog2 = new Dog("Tom",5,"blue","cartoon"  )
+console.log(dog)
+
+class Person {
+ #firstname;
+ #lastname;
+ constructor(firstname, lastname) {
+ this.#firstname = firstname;
+ this.#lastname = lastname;
+ }
+ get firstname() {
+ return this.#firstname;
+ }
+ set firstname(firstname) {
+ this.#firstname = firstname;
+ }
+ get lastname() {
+ return this.#lastname;
+ }
+ set lastname(lastname) {
+ this.#lastname = lastname;
+ }
+}
+const p = new Person("Siva","Pavan")
+console.log(p.firstname + p.lastname)
+
+class Vehicle {
+    constructor(color, currentSpeed, maxSpeed) {
+        this.color = color;
+        this.currentSpeed = currentSpeed;
+        this.maxSpeed = maxSpeed;
+    }
+    move() {
+        return "moving at "+this.currentSpeed + " Kmph";
+    }
+    accelerate(amount) {
+        this.currentSpeed += amount;
+        return this.currentSpeed;
+    }
+}
+const v = new Vehicle("red",40 , 120 )
+console.log(v)
+console.log(v.move())
+const am = v.accelerate(30)
+console.log(am)
+class bike extends Vehicle{
+    constructor(color, currentSpeed, maxSpeed, fuel){
+        super()
+        this.color = color;
+        this.currentSpeed = currentSpeed;
+        this.maxSpeed = maxSpeed;
+        this.fuel=fuel;
+    }
+    move(){
+        return  "This Bike moving at "+this.currentSpeed + " Kmph";
+    }
+    fuelStorage(){
+        return "This Bike has " + this.fuel + " Liters Storage"
+    }
+}
+const b = new bike("green", 60,150,30)
+console.log(b)
+console.log(b.move())
+console.log(b.accelerate(40))
+console.log(b.fuelStorage())
+
+class Person1 {
+    constructor(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    greet() {
+        console.log("Hi there!");
+    }
+}
+Person1.prototype.introduce = function () {
+    console.log("Hi, I'm", this.lastname);
+};
+const per = new Person1("Siva", "Pavan"); // greet() introduce()
+const pers = new Person1("qwe", "zxc"); // greet()
+console.log(per.greet())
+console.log(per.introduce())
+
+
+class Person2 {
+    constructor(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    greet() {
+        console.log("Hi there!");
+    }
+    introduce() {
+        console.log("Hi, I'm", this.firstname);
+    };
+}
+const pe2 = new Person2("Siva", "Pavan"); //greet() , introduce()
+const pe3 = new Person2("abc" , "xyz"); // greet() , introduce()
+console.log(pe2.greet())
+console.log(pe2.introduce())
+console.log(pe3.greet())
+console.log(pe3.introduce())
+
+let uri = "https://www.example.com/submit?name=maaike van putten";
+let encoded_uri = encodeURI(uri);
+console.log("Encoded:", encoded_uri);
+let decoded_uri = decodeURI(uri);
+console.log("Decoded:", decoded_uri);
+
+console.log(parseInt("42"));       // 42
+console.log(parseInt("42px 34"));     // 42  ✅ stops at "px"
+console.log(parseInt("3.14"));     // 3   ✅ drops decimal
+console.log(parseInt("101", 2));   // 5   ✅ binary to decimal
+console.log(parseInt("abc"));      // NaN
+
+let nums = [1, 2, 3, 4];
+nums.forEach(function (num, i, ar) {
+    console.log("Element : " ,num);
+    console.log("Index : " ,i);
+    console.log("Total Array : ",ar);
+});
+
+arr = ["grapefruit", 4, "hello", 5.6, true];
+arr.copyWithin(0, 1, 5);
+console.log(arr)
+
+let bb = ["so", "bye", "bye", "love"];
+console.log(bb.lastIndexOf("bye"));
+
+let s1 = "Hello ";
+let s2 = "JavaScript"; // Hello JavaScript
+let result = s1.concat(s2);
+console.log(result);
+
+let ao = "I love JavaScript"
+console.log(ao.replace("ava","0v0").replace("I","1").replace("o","0").replace("e","3").replace("l","7").replace("ip","19"))
