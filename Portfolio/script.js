@@ -153,8 +153,8 @@ let nr3 = 2;
 console.log(nr1++ + ++nr2 * nr3++);
 
 let aw = Number(prompt("Enter a value : "));
-let b = Number(prompt("Enter b Value : "));
-let c = (aw ** 2) + (b ** 2);
+let bw = Number(prompt("Enter b Value : "));
+let c = (aw ** 2) + (bw ** 2);
 console.log(c);
 
 
@@ -228,9 +228,9 @@ for(i = 0; i <=10; i++){
     console.log(arr8)
 }
 
-let obj = {a: 10, b: 20, c: 30};
-console.log('b' in obj); // true
-console.log('30' in obj); // false
+let objq = {a: 10, b: 20, c: 30};
+console.log('b' in objq); // true
+console.log('30' in objq); // false
 
 
 let obj2 = {a: 10, b: 20, c: 30};
@@ -281,7 +281,7 @@ let company = { companyName: "Healthy Candy",
 };
 console.log(company.address.number)
 
-let ar = []
+let arq = []
 let ob1 = {
     name : " car",
     model : " SUV",
@@ -300,10 +300,10 @@ let ob3 = {
     cost : " 5 cr",
     quantity : 2
 };
-ar.push(ob1);
-ar.push(ob2);
-ar.push(ob3);
-console.log(ar[2].quantity)
+arq.push(ob1);
+arq.push(ob2);
+arq.push(ob3);
+console.log(arq[2].quantity)
 
 const myArr1 = [1,3,5,6,8,9,15];
 console.log(myArr1.indexOf(0));
@@ -382,7 +382,8 @@ for (let i = 0; i < 1000; i += step) {
 function greet(...arguments){
     console.log("hi");
 }
-let a = greet(4, "Ji")
+let at = greet(4, "Ji")
+console.log(at)
 
 let varContainingFunction = function() {
  let varInFunction = "I'm in a function.";
@@ -608,3 +609,33 @@ console.log(result);
 
 let ao = "I love JavaScript"
 console.log(ao.replace("ava","0v0").replace("I","1").replace("o","0").replace("e","3").replace("l","7").replace("ip","19"))
+
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let myList = fruitss;
+// document.getElementById("demo").innerHTML = myList;
+console.log(typeof myList);
+console.log(myList)
+
+let arrd = ["a", "b", "c"];
+console.log(arrd.indexOf("e")); // -1
+console.log(arrd.includes("d")); // false
+
+
+let arra = ["a","b","c"];
+console.log(arra.join("-")); // a-b-c
+console.log(arra.toString(" "))
+console.log(arra.slice(0,2)); // ["a","b"]
+
+arra.splice(1, 1, "x"); // remove 1 element at index 1, insert "x"
+console.log(arra); // ["a","x","c"]
+
+async function asyncFunc() {
+  return 42;
+}
+async function caller() {
+  let result = await asyncFunc();
+  console.log(result); // 42
+return result;
+}
+console.log(caller());
+console.log(asyncFunc())
