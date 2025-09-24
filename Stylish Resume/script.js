@@ -1,3 +1,4 @@
+
 // 1️⃣ Smooth scroll for navigation links
 document.querySelectorAll('header a[href^="#"]').forEach(link => {
   link.addEventListener("click", function(e) {
@@ -24,10 +25,9 @@ form.addEventListener("submit", (e) => {
   const name = form.querySelector('input[type="text"]').value.trim();
   const email = form.querySelector('input[type="email"]').value.trim();
   const message = form.querySelector("textarea").value.trim();
-
   if (!name || !email || !message) alert("Please fill in all fields!");
   else {
-    alert("Thanks for reaching out! I will get back to you soon.");
+    alert("Thanks for reaching out to me.");
     form.reset();
   }
 });
@@ -45,3 +45,4 @@ function typeEffect() {
   }
 }
 typeEffect();
+
